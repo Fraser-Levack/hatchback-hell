@@ -1,0 +1,9 @@
+// Bend warning sign, 1.4 m wide. The face points +X and the chevrons point
+// to the driver's right (-Z) as seen from +X. Rotate 180 degrees about Y for a left bend.
+
+material(plastic, paint(#9AA0A6, move(-0.35, 6, 5, cylinder(0.3, 12)), move(-0.35, 6, -5, cylinder(0.3, 12))))
+material(plastic, paint(#141414, move(0, 9, 0, cube(0.2, 5, 14))))
+
+// One chevron: two arms meeting at a tip on its -Z side
+chevron = group(move(0, 0.92, 0.92, rotateX(45, cube(0.3, 0.7, 2.6))), move(0, -0.92, 0.92, rotateX(-45, cube(0.3, 0.7, 2.6))))
+material(plastic, paint(#F2F2F2, move(0.2, 9, -5.2, chevron), move(0.2, 9, -1.2, chevron), move(0.2, 9, 2.8, chevron)))

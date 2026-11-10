@@ -1,0 +1,6 @@
+// Tyre barrier: three racing tyres stacked flat, 60 cm tall.
+// Same tyre size as the hatchback's wheels (radius 3.1, width 2).
+
+tyre = difference(group(cylinder(3.1, 1.3), move(0, 0.62, 0, torus(2.72, 0.38)), move(0, -0.62, 0, torus(2.72, 0.38))), cylinder(1.9, 3))
+material(matte, paint(#1A1A1A, move(0, 1, 0, tyre), move(0, 5, 0, tyre)))
+material(matte, paint(#E8E8E8, move(0, 3, 0, tyre)))

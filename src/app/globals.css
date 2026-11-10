@@ -1,0 +1,75 @@
+:root {
+  --hh-bg: #0e1116;
+  --hh-panel: rgba(12, 15, 20, 0.62);
+  --hh-border: rgba(255, 255, 255, 0.12);
+  --hh-text: #f4f4f2;
+  --hh-dim: rgba(244, 244, 242, 0.62);
+  --hh-accent: #ff3b3b;
+  --hh-gold: #ffcf33;
+  --hh-font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--hh-bg);
+  color: var(--hh-text);
+  font-family: var(--hh-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.hh-root {
+  position: fixed;
+  inset: 0;
+}
+
+/* ---- Loading ---------------------------------------------------------- */
+
+.hh-loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: radial-gradient(ellipse at center, #1b222c, var(--hh-bg));
+  z-index: 10;
+}
+
+.hh-title {
+  font-size: clamp(36px, 7vw, 72px);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--hh-text);
+  text-shadow: 4px 4px 0 var(--hh-accent);
+}
+
+.hh-progress {
+  width: min(320px, 70vw);
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.hh-progress div {
+  height: 100%;
+  background: var(--hh-accent);
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+
+.hh-error {
+  max-width: 520px;
+  padding: 0 16px;
+  text-align: center;
+  color: #fca5a5;
+}

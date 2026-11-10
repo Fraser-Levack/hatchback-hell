@@ -1,0 +1,7 @@
+// Broad-leaf tree, about 5 m tall.
+
+trunk = group(move(0, 11, 0, cone(2.2, 1.4, 22)), move(2.5, 21, 1, rotateZ(-35, cylinder(0.8, 9))), move(-2.2, 20, -1.5, rotateZ(40, rotateX(-15, cylinder(0.8, 8)))))
+material(matte, paint(#5B3A21, trunk))
+
+material(matte, paint(#4C8A33, move(0, 33, 0, sphere(12)), move(8, 29, 4, sphere(8.5)), move(-3, 40, -4, sphere(8))))
+material(matte, paint(#3F7A2B, move(-8, 30, -4, sphere(9)), move(3, 38, 6, sphere(8)), move(5, 30, -8, sphere(7.5))))

@@ -1,0 +1,7 @@
+// Wooden post-and-rail fence section, 4 m long (along X), 1.2 m tall.
+// Sections join end to end every 40 units along X.
+
+post = cube(1.2, 12, 1.2)
+material(matte, paint(#7A5230, move(-19.4, 6, 0, post), move(-6.5, 6, 0, post), move(6.5, 6, 0, post), move(19.4, 6, 0, post)))
+rail = cube(40, 1.2, 0.5)
+material(matte, paint(#8B5E34, move(0, 4, 0.85, rail), move(0, 7.6, 0.85, rail), move(0, 11, 0.85, rail)))

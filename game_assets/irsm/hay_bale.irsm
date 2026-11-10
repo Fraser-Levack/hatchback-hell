@@ -1,0 +1,10 @@
+// Round hay bale lying on its side, 1.33 m tall, 1.2 m wide (along Z).
+
+bale = move(0, 6.65, 0, rotateX(90, cylinder(6.5, 12)))
+material(matte, paint(#D9B44A, bale))
+
+// Darker spiral ends, and the net wrap round the middle
+ends = group(move(0, 6.65, 6.02, rotateX(90, cylinder(5.6, 0.1))), move(0, 6.65, -6.02, rotateX(90, cylinder(5.6, 0.1))))
+material(matte, paint(#B8923A, ends))
+wrap = rotateX(90, torus(6.5, 0.14))
+material(plastic, paint(#E8E6DC, move(0, 6.65, -3.5, wrap), move(0, 6.65, 0, wrap), move(0, 6.65, 3.5, wrap)))

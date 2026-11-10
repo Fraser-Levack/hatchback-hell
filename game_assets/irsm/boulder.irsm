@@ -1,0 +1,4 @@
+// Faceted boulder, about 1.8 m long and 1 m tall. Flat underneath.
+
+rock = intersection(move(0, 3, 0, scale(9, 7, 7, sphere(1))), intersection(move(0, 4, 0, rotateY(25, rotateZ(15, cube(15, 11, 12)))), move(0, 3, 0, rotateX(20, rotateY(-20, cube(16, 12, 11))))))
+material(matte, paint(#7D7A74, intersection(rock, move(0, 10, 0, cube(40, 20, 40)))))

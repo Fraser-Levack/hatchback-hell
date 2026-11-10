@@ -1,0 +1,284 @@
+{
+  "units": "1 unit = 10 cm (scale the car root by 0.1 for metres)",
+  "forward": "+X",
+  "up": "+Y",
+  "assembled": "hatchback.glb",
+  "parts": [
+    {
+      "name": "body",
+      "file": "glb/body.glb",
+      "pivot": [
+        0,
+        7.5,
+        0
+      ],
+      "category": "core",
+      "detachable": false,
+      "mass_kg": 650
+    },
+    {
+      "name": "bonnet",
+      "file": "glb/bonnet.glb",
+      "pivot": [
+        13.5,
+        7.6,
+        0
+      ],
+      "category": "panel",
+      "detachable": true,
+      "mass_kg": 15
+    },
+    {
+      "name": "door_right",
+      "file": "glb/door_right.glb",
+      "pivot": [
+        1.75,
+        7.5,
+        8.4
+      ],
+      "category": "panel",
+      "detachable": true,
+      "mass_kg": 25
+    },
+    {
+      "name": "door_left",
+      "file": "glb/door_left.glb",
+      "pivot": [
+        1.75,
+        7.5,
+        -8.4
+      ],
+      "category": "panel",
+      "detachable": true,
+      "mass_kg": 25
+    },
+    {
+      "name": "windscreen",
+      "file": "glb/windscreen.glb",
+      "pivot": [
+        3.3,
+        11.2,
+        0
+      ],
+      "category": "glass",
+      "detachable": true,
+      "mass_kg": 12
+    },
+    {
+      "name": "tailgate",
+      "file": "glb/tailgate.glb",
+      "pivot": [
+        -18.6,
+        9.5,
+        0
+      ],
+      "category": "panel",
+      "detachable": true,
+      "mass_kg": 20
+    },
+    {
+      "name": "bumper_front",
+      "file": "glb/bumper_front.glb",
+      "pivot": [
+        18.2,
+        3.4,
+        0
+      ],
+      "category": "bumper",
+      "detachable": true,
+      "mass_kg": 8
+    },
+    {
+      "name": "bumper_rear",
+      "file": "glb/bumper_rear.glb",
+      "pivot": [
+        -18.6,
+        3.3,
+        0
+      ],
+      "category": "bumper",
+      "detachable": true,
+      "mass_kg": 8
+    },
+    {
+      "name": "grille",
+      "file": "glb/grille.glb",
+      "pivot": [
+        19.6,
+        5.7,
+        0
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 2
+    },
+    {
+      "name": "headlight_right",
+      "file": "glb/headlight_right.glb",
+      "pivot": [
+        19.0,
+        5.7,
+        6.8
+      ],
+      "category": "light",
+      "detachable": true,
+      "mass_kg": 1.5
+    },
+    {
+      "name": "taillight_right",
+      "file": "glb/taillight_right.glb",
+      "pivot": [
+        -19.2,
+        6.65,
+        7.7
+      ],
+      "category": "light",
+      "detachable": true,
+      "mass_kg": 1
+    },
+    {
+      "name": "headlight_left",
+      "file": "glb/headlight_left.glb",
+      "pivot": [
+        19.0,
+        5.7,
+        -6.8
+      ],
+      "category": "light",
+      "detachable": true,
+      "mass_kg": 1.5
+    },
+    {
+      "name": "taillight_left",
+      "file": "glb/taillight_left.glb",
+      "pivot": [
+        -19.2,
+        6.65,
+        -7.7
+      ],
+      "category": "light",
+      "detachable": true,
+      "mass_kg": 1
+    },
+    {
+      "name": "mirror_right",
+      "file": "glb/mirror_right.glb",
+      "pivot": [
+        5.5,
+        9.1,
+        9.3
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 1.5
+    },
+    {
+      "name": "mirror_left",
+      "file": "glb/mirror_left.glb",
+      "pivot": [
+        5.5,
+        9.1,
+        -9.3
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 1.5
+    },
+    {
+      "name": "spoiler",
+      "file": "glb/spoiler.glb",
+      "pivot": [
+        -15.1,
+        14.6,
+        0
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 4
+    },
+    {
+      "name": "exhaust",
+      "file": "glb/exhaust.glb",
+      "pivot": [
+        -19.9,
+        2.1,
+        -5.2
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 3
+    },
+    {
+      "name": "plate_front",
+      "file": "glb/plate_front.glb",
+      "pivot": [
+        19.85,
+        3.75,
+        0
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 0.5
+    },
+    {
+      "name": "plate_rear",
+      "file": "glb/plate_rear.glb",
+      "pivot": [
+        -19.85,
+        6.4,
+        0
+      ],
+      "category": "trim",
+      "detachable": true,
+      "mass_kg": 0.5
+    },
+    {
+      "name": "wheel_front_right",
+      "file": "glb/wheel_front_right.glb",
+      "pivot": [
+        12.0,
+        3.1,
+        7.6
+      ],
+      "category": "wheel",
+      "detachable": true,
+      "mass_kg": 12
+    },
+    {
+      "name": "wheel_front_left",
+      "file": "glb/wheel_front_left.glb",
+      "pivot": [
+        12.0,
+        3.1,
+        -7.6
+      ],
+      "category": "wheel",
+      "detachable": true,
+      "mass_kg": 12
+    },
+    {
+      "name": "wheel_rear_right",
+      "file": "glb/wheel_rear_right.glb",
+      "pivot": [
+        -13.0,
+        3.1,
+        7.6
+      ],
+      "category": "wheel",
+      "detachable": true,
+      "mass_kg": 12
+    },
+    {
+      "name": "wheel_rear_left",
+      "file": "glb/wheel_rear_left.glb",
+      "pivot": [
+        -13.0,
+        3.1,
+        -7.6
+      ],
+      "category": "wheel",
+      "detachable": true,
+      "mass_kg": 12
+    }
+  ]
+}

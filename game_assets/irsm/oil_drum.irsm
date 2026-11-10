@@ -1,0 +1,8 @@
+// 200-litre oil drum, 88 cm tall.
+
+material(plastic, paint(#1F5FA8, move(0, 4.4, 0, cylinder(2.9, 8.8))))
+rib = torus(2.9, 0.16)
+rim = torus(2.82, 0.16)
+material(plastic, paint(#1A4E8C, move(0, 2.9, 0, rib), move(0, 5.9, 0, rib), move(0, 0.15, 0, rim), move(0, 8.65, 0, rim)))
+// Filler cap on the lid
+material(metal, paint(#B8BCC2, move(1.6, 8.85, 0, cylinder(0.45, 0.2))))

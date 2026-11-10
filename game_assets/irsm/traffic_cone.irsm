@@ -1,0 +1,12 @@
+// Traffic cone, 70 cm tall. Units: 1 = 10 cm (same as the hatchback).
+// Ground at y = 0, centred on its base.
+
+base = move(0, 0.2, 0, cube(4.4, 0.4, 4.4))
+material(matte, paint(#1A1A1A, base))
+
+body = move(0, 3.6, 0, cone(1.6, 0.35, 6.4))
+material(plastic, paint(#F26A0F, body))
+
+// Reflective bands: a slightly fatter cone, cut into two rings
+shell = move(0, 3.6, 0, cone(1.66, 0.41, 6.4))
+material(plastic, paint(#F2F2F2, intersection(shell, move(0, 3.9, 0, cube(5, 0.9, 5))), intersection(shell, move(0, 5.4, 0, cube(5, 0.6, 5)))))

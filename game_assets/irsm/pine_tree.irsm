@@ -1,0 +1,5 @@
+// Pine tree, about 6.2 m tall.
+
+material(matte, paint(#5B3A21, move(0, 7, 0, cylinder(1.2, 14))))
+material(matte, paint(#2F6B2C, move(0, 23, 0, cone(15, 26)), move(0, 43, 0, cone(9, 18))))
+material(matte, paint(#285E26, move(0, 33, 0, cone(12, 22)), move(0, 54, 0, cone(6, 16))))

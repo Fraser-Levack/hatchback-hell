@@ -1,0 +1,10 @@
+// Wooden crate, 80 cm cube.
+
+// Frame: a cube with three cross-shaped tunnels removed leaves its 12 edges
+frame = difference(move(0, 4, 0, cube(8, 8, 8)), move(0, 4, 0, group(cube(9, 6.4, 6.4), cube(6.4, 9, 6.4), cube(6.4, 6.4, 9))))
+material(matte, paint(#B5814A, frame))
+material(matte, paint(#8C5D2E, move(0, 4, 0, cube(7.6, 7.6, 7.6))))
+
+// Diagonal brace on each side face
+brace = intersection(rotateZ(45, cube(9, 0.9, 0.3)), cube(6.4, 6.4, 1))
+material(matte, paint(#B5814A, move(0, 4, 3.9, brace), move(0, 4, -3.9, brace), move(3.9, 4, 0, rotateY(90, brace)), move(-3.9, 4, 0, rotateY(90, brace))))

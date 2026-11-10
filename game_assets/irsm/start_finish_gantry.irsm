@@ -1,0 +1,17 @@
+// Start / finish gantry over the road: 8 m wide (along Z), 5 m tall.
+// The road runs along X underneath it, with about 7 m between the pillars.
+
+pillar = cube(3, 50, 3)
+material(plastic, paint(#2E3135, move(0, 25, 38, pillar), move(0, 25, -38, pillar)))
+foot = cube(6, 1, 6)
+material(matte, paint(#A3A29C, move(0, 0.5, 38, foot), move(0, 0.5, -38, foot)))
+
+// Chequered banner: a white board with a checkerboard of black squares
+material(plastic, paint(#F2F2F2, move(0, 46, 0, cube(2, 8, 80))))
+checks = repeat(0, 4, 4, group(move(0, 1, 1, cube(3, 2, 2)), move(0, -1, -1, cube(3, 2, 2))))
+material(plastic, paint(#141414, intersection(move(0, 46, 0, cube(2.2, 8, 80)), checks)))
+
+// Start lights under the banner
+lamp = sphere(0.8)
+material(plastic, paint(#141414, move(0, 41.2, 0, cube(1.8, 1.6, 10))))
+material(neon, paint(#B00A0A, move(0.9, 41.2, -4, lamp), move(0.9, 41.2, -2, lamp), move(0.9, 41.2, 0, lamp), move(0.9, 41.2, 2, lamp), move(0.9, 41.2, 4, lamp)))

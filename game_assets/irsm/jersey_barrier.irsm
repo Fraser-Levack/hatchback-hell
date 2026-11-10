@@ -1,0 +1,20 @@
+// Concrete jersey barrier, 3 m long (along X), 80 cm tall, 60 cm wide.
+// The profile is concave, so it is two pieces: a sloped foot and a steep wall.
+
+foot = difference(move(0, 1.25, 0, cube(30, 2.5, 6)), group(
+    move(0, 19.871, 26.158, rotateX(-50.53, cube(60, 60, 60))),
+    move(0, 19.871, -26.158, rotateX(50.53, cube(60, 60, 60)))))
+wall = difference(move(0, 5.2, 0, cube(30, 5.6, 3.4)), group(
+    move(0, 6.818, 31.288, rotateX(-81.72, cube(60, 60, 60))),
+    move(0, 6.818, -31.288, rotateX(81.72, cube(60, 60, 60)))))
+// Forklift slots through the foot
+slots = group(move(-8, 0.3, 0, cube(3, 0.6, 7)), move(8, 0.3, 0, cube(3, 0.6, 7)))
+material(matte, paint(#A3A29C, difference(group(foot, wall), slots)))
+
+// Red and white stripe along both faces (a slightly fatter copy of the wall)
+fatWall = difference(move(0, 5.2, 0, cube(30, 5.6, 3.6)), group(
+    move(0, 6.818, 31.388, rotateX(-81.72, cube(60, 60, 60))),
+    move(0, 6.818, -31.388, rotateX(81.72, cube(60, 60, 60)))))
+stripe = intersection(fatWall, move(0, 6.4, 0, cube(30, 0.8, 8)))
+material(plastic, paint(#C8161D, intersection(stripe, repeat(6, 0, 0, move(-1.5, 0, 0, cube(3, 40, 20))))))
+material(plastic, paint(#F2F2F2, intersection(stripe, repeat(6, 0, 0, move(1.5, 0, 0, cube(3, 40, 20))))))

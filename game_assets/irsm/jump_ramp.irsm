@@ -1,0 +1,11 @@
+// Jump ramp, 4 m long, 1.8 m wide, 80 cm tall at the lip.
+// Drive up it towards +X.
+
+wedge = difference(move(0, 4, 0, cube(40, 8, 18)), move(-5.883, 33.417, 0, rotateZ(-11.31, cube(60, 60, 60))))
+material(matte, paint(#B07D45, wedge))
+
+// Hazard bars on the lip face
+material(plastic, paint(#F2C500, move(20.05, 4, 0, cube(0.3, 8, 18))))
+material(plastic, paint(#141414, intersection(move(20.1, 4, 0, cube(0.32, 8, 18)), repeat(0, 0, 4, move(20.1, 4, 0, cube(1, 20, 2))))))
+// Dark edging along both sides
+material(plastic, paint(#141414, intersection(wedge, move(0, 4, 8.85, cube(42, 10, 0.4))), intersection(wedge, move(0, 4, -8.85, cube(42, 10, 0.4)))))
